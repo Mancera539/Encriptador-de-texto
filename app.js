@@ -4,6 +4,7 @@ const mensaje = document.querySelector(".salida_de_texto");
 let matrizCodigo = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
 
 //FUNCIONES DE BOTONES
+
 function botonEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
