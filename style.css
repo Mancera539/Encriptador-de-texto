@@ -1,9 +1,8 @@
-/*IMPORTE DE LA FUENTE USADA "INTER"*/
+/*IMPORTE DE LA FUENTE USADA "INTER", "NEW AMSTERDAM*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
-
+/*Selecciones generales*/
 *{
-    background: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Inter", sans-serif;
@@ -12,15 +11,17 @@
     line-height: 150%;
     opacity: 1;
 }
-
+/*IMAGEN DE FONDO*/
 .todo{
     background-image: url("paisaje.png");
 }
+/*CUADRO DE TITULO*/
 header{
     width: 90%;
     height: 10%;
     background-color: rgba(255, 255, 255, 0.0);
 }
+/*ESPECIFICACIONES ENCABEZADO*/
 .encabezado{
     color: #FFFFFF;
     text-align: center;
@@ -29,13 +30,15 @@ header{
     font-size: 150%;
     background-color: rgba(255, 255, 255, 0.0);
 }
+/*TAMAÑO DEL BODY*/
 body{
     color: #0A3871;
     height: 200%;
     background-color: rgba(255, 255, 255, 0.0);
     
 }
-
+/*ESPECIFICACIONES DE LAS SECCIONES IZQUIERDA(INGRESO DE TEXTO, CONDICIONES, BOTONES DE ENCRIPTAR Y DESENCRIPTAR)
+Y SECCION DERECHA(SALIDA DE TEXTO Y BOTON COPIAR)*/
 main{
     display: flex;
     margin-left: 10%;
@@ -44,13 +47,14 @@ main{
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.0);
 }
+/*TAMAÑO DE LA SECCION IZQUIERDA*/
 .seccionIzq{
     width: 40%;
     height: 60%;
     background-image: none;
     background-color: rgba(255, 255, 255, 0.0);
-    
 }
+/*ESPECIFICACIONES Y TAMAÑO DE DONDE SE INGRESA EL TEXTO*/
 .ingreso_de_texto{
     background-image: none;
     background-color: rgba(255, 255, 255, 0.4);
@@ -66,14 +70,20 @@ main{
  .ingreso_de_texto:focus{
     outline: none;
  }
-
+/*ESPECIFICACIONES DE LAS CONDICIONES PARA INGRESAR EL TEXTO*/
+.condiciones{
+    font-size: 50%;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+/*ESPECIFICACIONES Y TAMAÑO DE CUADRO DONDE SALE EL TEXTO Y BOTON DE COPIAR*/
 .seccionDer{
     background-color: rgba(255, 255, 255, 0.0);
     width: 40%;
     margin-right: 10%;
     height: 100%;
-
 }
+/*ESPECIFICAIONES CUADRO DE TEXTO DONDE SE VE EL TEXTO ENCRIPTADO*/
 .salida_de_texto{
     background-color: white;
     background-color: rgba(255, 255, 255, 0.4);
@@ -90,12 +100,7 @@ main{
 .salida_de_texto:focus{
     outline: none;
 }
-.condiciones{
-    font-size: 50%;
-    color: #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.0);
-
-}
+/*ESPECIFICACIONES DE LOS BOTONES ENCRIPTAR, DESDENCRIPTAR Y COPIAR*/
 .botones{
     background-color: rgba(255, 255, 255, 0.0);
     display: flex;
@@ -132,4 +137,20 @@ main{
     height: 67px;
     width: 40%;
     text-align: center;
+}
+/*CONDICIONES DE RESPONSIVIDAD*/
+@media (max-width: 1200px){
+    .secciones{
+        flex-direction: column;
+    }
+    .seccionIzq{
+        width: 80%;
+        height: 60%;
+    }
+   
+    .seccionDer{
+        width: 80%;
+        height: 60%;
+    }
+    
 }
