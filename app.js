@@ -17,21 +17,14 @@ function botondesEncriptar(){
     mensaje.style.backgroundImage = "none"
     }    
 function copiarTexto() {
-    // Selecciona el cuadro de texto
     var cuadroTexto = document.getElementById("miTexto");
-
-    // Selecciona el texto
     cuadroTexto.select();
-    cuadroTexto.setSelectionRange(0, 99999); // Para dispositivos móviles
-
-    // Copia el texto al portapapeles
+    cuadroTexto.setSelectionRange(0, 99999);
     document.execCommand("copy");
-
-    // Confirmación (opcional)
     alert("Texto copiado: " + cuadroTexto.value);
     
 }
-//FUNCIONES PARA CAMBIAR LAS VOCALES POR [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
+//FUNCIONES PARA CAMBIAR LAS VOCALES POR [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]] o viceversa
 function encriptar(stringEncriptada){    
     stringEncriptada = stringEncriptada.toLowerCase()
 
